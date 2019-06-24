@@ -1,4 +1,4 @@
-Java application that provide chatting system with ability to moderate the chat. 
+Java games with cool features.
 
 ## Quick start
 
