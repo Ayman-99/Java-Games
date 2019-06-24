@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="877.0" style="-fx-background-color: #477CA3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game1.Game1Controller">
+   <children>
+      <Text layoutX="330.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Rock Paper Scissors!" wrappingWidth="256.6708984375">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="153.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remember that Rock beats Scissors, Paper beats Rock and Scissors beats Paper." wrappingWidth="676.6708984375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="365.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please make your selection below:" wrappingWidth="185.6708984375">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="rockChoice" layoutX="45.0" layoutY="149.0" mnemonicParsing="false" onAction="#rock" prefHeight="142.0" prefWidth="216.0" style="-fx-background-color: #477CA3;" />
+      <Button fx:id="paperChoice" layoutX="324.0" layoutY="149.0" mnemonicParsing="false" onAction="#paper" prefHeight="142.0" prefWidth="216.0" style="-fx-background-color: #477CA3;" />
+      <Button fx:id="scissorChoice" layoutX="607.0" layoutY="149.0" mnemonicParsing="false" onAction="#scissor" prefHeight="142.0" prefWidth="216.0" style="-fx-background-color: #477CA3;" />
+      <Button fx:id="rulesList" layoutX="197.0" layoutY="322.0" mnemonicParsing="false" onAction="#rules" prefHeight="31.0" prefWidth="483.0" text="RULES" />
+      <Text fx:id="result1" layoutX="238.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="401.6708984375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

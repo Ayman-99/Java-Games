@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="795.0" style="-fx-background-color: #477CA3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otherStuff.GameSelectionController">
+   <children>
+      <ImageView fx:id="RockPaper" fitHeight="396.0" fitWidth="364.0" layoutX="6.0" layoutY="430.0" onMouseClicked="#loadAsteroids" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Astr.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MathGame" fitHeight="351.0" fitWidth="347.0" layoutX="407.0" layoutY="72.0" onMouseClicked="#loadRock" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Rock.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="73.0" layoutY="32.0" prefHeight="36.0" prefWidth="668.0" text="Click on picture to start game">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="35.0" />
+         </font>
+         <padding>
+            <Insets left="100.0" />
+         </padding>
+      </Label>
+      <ImageView fx:id="MathGame1" fitHeight="351.0" fitWidth="347.0" layoutX="14.0" layoutY="83.0" onMouseClicked="#loadMine" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Mines.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RockPaper1" fitHeight="396.0" fitWidth="364.0" layoutX="399.0" layoutY="430.0" onMouseClicked="#loadMath" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@math.preview11.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

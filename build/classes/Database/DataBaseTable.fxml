@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="752.0" prefWidth="988.0" style="-fx-background-color: #553FAB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Database.DataBaseTableController">
+   <center>
+      <TableView fx:id="DataTABLEVIEW" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idCol" minWidth="80.0" prefWidth="85.0" text="ID" />
+          <TableColumn fx:id="usernameCol" minWidth="80.0" prefWidth="234.0" text="USERNAME" />
+            <TableColumn fx:id="passwordCol" minWidth="150.0" prefWidth="191.0" text="PASSWORD" />
+            <TableColumn fx:id="expireCol" minWidth="150.0" prefWidth="268.0" text="EXPIRE DATE" />
+        </columns>
+      </TableView>
+   </center>
+   <left>
+      <ListView fx:id="DataLISTVIEW" onMouseClicked="#selectUser" prefHeight="752.0" prefWidth="209.0" style="-fx-background-color: #8D80C3;" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <HBox prefHeight="77.0" prefWidth="988.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="UserUpdate" mnemonicParsing="false" onAction="#updateUser" prefHeight="31.0" prefWidth="92.0" text="Update">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="UserDelete" mnemonicParsing="false" onAction="#deleteUser" prefHeight="31.0" prefWidth="98.0" text="Delete">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <TextField fx:id="id" alignment="CENTER" promptText="ID">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox>
+                     <children>
+                        <Button fx:id="DataLoad" mnemonicParsing="false" onAction="#loadData" prefHeight="27.0" prefWidth="90.0" text="Load" />
+                        <Button fx:id="tableRefresh" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#refreshDataTable" prefHeight="27.0" prefWidth="90.0" text="Refresh">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </VBox>
+            <TextField fx:id="username" alignment="CENTER" promptText="USERNAME">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="password" alignment="CENTER" promptText="PASSWORD">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="expireDate" alignment="CENTER" layoutX="514.0" layoutY="10.0" promptText="EXPIRE DATE">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
