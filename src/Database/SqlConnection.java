@@ -11,7 +11,6 @@ public class SqlConnection {
         try {
              Connection conn = null;
              Class.forName("com.mysql.jdbc.Driver");
-             //conn = DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12241333","sql12241333","7wzPdIec35");
              conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/games","Ayman","root");
              return conn;
          }catch(ClassNotFoundException | SQLException e) {
